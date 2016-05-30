@@ -1,2 +1,2 @@
-# modsoussixyz
+# modsoussi.xyz
 personal website
