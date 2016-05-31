@@ -2,3 +2,8 @@
 	background-color: transparent;
 	border-bottom: solid 2px #e6e600;
 }
+
+.navbar-light .navbar-nav .inactive>a:hover {
+	background-color: transparent;
+	color: #337ab7;
+}
