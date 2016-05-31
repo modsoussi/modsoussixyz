@@ -7,16 +7,32 @@
 var Nav = React.createClass({
 	render: function(){
 		return(
-			<nav className="navbar navbar-light" style={{margin: 15, borderBottom: 2}}>
+			<nav id="b-override" className="navbar navbar-light" style={{marginTop: 15, marginLeft: 25, marginRight: 25, fontSize: 24}}>
 				<ul className="nav navbar-nav">
-					<li className="nav-item active" href="#">modsoussi</li>
+					<li className="nav-item active"><a href="#">modsoussi</a></li>
 				</ul>
 				
 				<ul className="nav navbar-nav navbar-right">
 					<li className="nav-item active" href="#">
-						<g>
-							<i className="fa fa-facebook fa"></i>
-						</g>
+						<a href="#">
+							<g>
+								<i className="fa fa-twitter"></i>
+							</g>
+						</a>
+					</li>
+					<li className="nav-item active" href="#">
+						<a href="#">
+							<g>
+								<i className="fa fa-linkedin"></i>
+							</g>
+						</a>
+					</li>
+					<li className="nav-item active" href="#">
+						<a href="#">
+							<g>
+								<i className="fa fa-envelope" style={{marginRight: 15}}></i>
+							</g>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -24,7 +40,28 @@ var Nav = React.createClass({
 	}
 });
 
+var Body = React.createClass({
+	render: function(){
+		return(
+			<div className="container" style={{margin: 50}}>
+				<p>Hi there, friend!</p>
+			</div>
+		);
+	}
+});
+
+var Container = React.createClass({
+	render: function(){
+		return(
+			<div>
+				<Nav />
+				<Body />
+			</div>
+		);
+	}
+});
+
 ReactDOM.render(
-	<Nav />,
+	<Container />,
 	document.getElementById("main")
 );
