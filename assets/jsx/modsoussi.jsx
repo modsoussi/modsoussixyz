@@ -7,9 +7,11 @@
 var Nav = React.createClass({
 	render: function(){
 		return(
-			<nav id="b-override" className="navbar navbar-light" style={{marginTop: 15, marginLeft: 25, marginRight: 25, fontSize: 24}}>
+			<nav id="b-override" className="navbar navbar-light" style={{marginTop: 15, marginLeft: 25, marginRight: 25, fontSize: 20}}>
 				<ul className="nav navbar-nav">
-					<li className="nav-item active"><a href="#">modsoussi</a></li>
+					<li className="nav-item active"><a href="#" style={{fontSize: 36}}>modsoussi</a></li>
+					<li className="nav-item active"><a href="#" style={{marginLeft: 25, marginTop: 5}}>about</a></li>
+					<li className="nav-item active"><a href="#" style={{marginTop: 5}}>projects</a></li>
 				</ul>
 				
 				<ul className="nav navbar-nav navbar-right">
@@ -44,7 +46,7 @@ var Body = React.createClass({
 	render: function(){
 		return(
 			<div className="container" style={{margin: 50}}>
-				<p>Hi there, friend!</p>
+				
 			</div>
 		);
 	}
