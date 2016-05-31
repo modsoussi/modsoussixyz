@@ -15,21 +15,28 @@ var Nav = React.createClass({
 				</ul>
 				
 				<ul className="nav navbar-nav navbar-right">
-					<li className="nav-item active" href="#">
-						<a href="#">
+					<li className="nav-item active">
+						<a target="_blank" href="https://twitter.com/modsoussi">
 							<g>
 								<i className="fa fa-twitter"></i>
 							</g>
 						</a>
 					</li>
-					<li className="nav-item active" href="#">
-						<a href="#">
+					<li className="nav-item active">
+						<a target="_blank" href="https://github.com/modsoussi">
+							<g>
+								<i className="fa fa-github"></i>
+							</g>
+						</a>
+					</li>
+					<li className="nav-item active">
+						<a target="_blank" href="https://linkedin.com/in/mohameddsoussi">
 							<g>
 								<i className="fa fa-linkedin"></i>
 							</g>
 						</a>
 					</li>
-					<li className="nav-item active" href="#">
+					<li className="nav-item active">
 						<a href="#">
 							<g>
 								<i className="fa fa-envelope" style={{marginRight: 15}}></i>
