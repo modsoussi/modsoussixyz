@@ -71,7 +71,7 @@ var Body = React.createClass({
 				<div className="container" style={{marginTop: 50, fontSize: 25}}>
 					<div className="row">
 						<div className="col-md-6 center-block">
-							<p>Hi there, friend! My name is Mohamed, and I go by Mo. I was born
+							<p>Hello there, friend! My name is Mohamed, and I go by Mo. I was born
 								and raised in Bizerte, Tunisia, before life led me to a wonderful piece of
 								land in western Massachussetts that people call the Purple Bubble, and there stood
 								the top liberal arts college in the country, Williams College. In this bubble in the
@@ -79,7 +79,7 @@ var Body = React.createClass({
 								the world. My belief is that Humanity's future lies in its expansion outside of planet Earth.
 								I'm only 24, and I'm going to do everything I can to see it happen in my lifetime. @elonmusk ;)
 								For the time being, I'm working on <a href="http://daycationapp.com" target="_blank">
-								Daycation</a>.
+								Daycation</a>, while I improve my software and aerospace engineering skills.
 							 </p>
 						</div>
 					</div>

@@ -1,3 +1,11 @@
+/* Animation definitions */
+@keyframes entrance {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+/* Style stuff */
+
 .navbar-light .navbar-nav .active>a:hover {
 	background-color: transparent;
 	border-bottom: solid 2px #e6e600;
@@ -12,9 +20,19 @@
 	color: #337ab7;
 }
 
-.container .row p {
+.container .row {
+	animation-name: entrance;
+	animation-duration: 1s;
+}
+
+.container .row p, a {
 	font-family: 'Hind', serif;
 	color: #337aa0;
+}
+
+.container .row a:hover {
+	text-decoration: none;
+	color: #e6e600;
 }
 
 .center-block {
