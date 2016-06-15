@@ -5,13 +5,28 @@
  */
 
 var Nav = React.createClass({
+	handleClick: function(e){
+		return this.props.handleClick(e);
+	},
 	render: function(){
 		return(
 			<nav id="b-override" className="navbar navbar-light" style={{marginTop: 15, marginLeft: 25, marginRight: 25, fontSize: 20}}>
 				<ul className="nav navbar-nav">
-					<li className="nav-item inactive"><a style={{fontSize: 36}}>modsoussi</a></li>
-					<li className="nav-item active"><a href="#" style={{marginLeft: 25, marginTop: 5}}>skillz</a></li>
-					<li className="nav-item active"><a href="#" style={{marginTop: 5}}>projects</a></li>
+					<li className="nav-item active">
+						<a href="#" style={{fontSize: 36}} onClick={this.handleClick}>
+							modsoussi
+						</a>
+					</li>
+					<li className="nav-item active" onClick={this.handleClick}>
+						<a href="#" style={{marginLeft: 25, marginTop: 5}}>
+							skillz
+						</a>
+					</li>
+					<li className="nav-item active" onClick={this.handleClick}>
+						<a href="#" style={{marginTop: 5}}>
+							projects
+						</a>
+					</li>
 				</ul>
 				
 				<ul className="nav navbar-nav navbar-right">
@@ -49,12 +64,9 @@ var Nav = React.createClass({
 	}
 });
 
-var Content = React.createClass({
-	getInitialState: function(){
-		return {tab: this.props.tab};
-	},
+var Body = React.createClass({
 	render: function(){
-		if(this.state.tab === "home"){
+		if(this.props.tab === "modsoussi"){
 			return(
 				<div className="container" style={{marginTop: 50, fontSize: 25}}>
 					<div className="row">
@@ -64,49 +76,49 @@ var Content = React.createClass({
 								land in western Massachussetts that people call the Purple Bubble, and there stood
 								the top liberal arts college in the country, Williams College. In this bubble in the
 								middle of the Berkshires, I majored in Physics and Computer Science and set out to change
-								the world. My belief is that humanity's future lies in its expansion outside of planet Earth.
+								the world. My belief is that Humanity's future lies in its expansion outside of planet Earth.
 								I'm only 24, and I'm going to do everything I can to see it happen in my lifetime. @elonmusk ;)
+								For the time being, I'm working on <a href="http://daycationapp.com" target="_blank">
+								Daycation</a>.
 							 </p>
 						</div>
 					</div>
 				</div>
 			);
-		} else if(this.state.tab === "about"){
+		} else if(this.props.tab === "skillz"){
 			return(
 				<div className="container">
 					<div className="row">
 						<div className="col-md-6 center-block">
-							<h2> Hello, about! </h2>
+							<h2> Hello, skillz! </h2>
 						</div>
 					</div>
 				</div>
 			);
 		} else return(
-				<div className="container">
-					<div className="row">
-						<div className="col-md-6 center-block">
-							<h2> Hello, projects! </h2>
-						</div>
+			<div className="container">
+				<div className="row">
+					<div className="col-md-6 center-block">
+						<h2> Hello, projects! </h2>
 					</div>
 				</div>
-		);
-	}
-})
-
-var Body = React.createClass({
-	render: function(){
-		return(
-			<Content tab="home"/>
+			</div>
 		);
 	}
 });
 
 var Container = React.createClass({
+	getInitialState: function(){
+		return {tab: "modsoussi"};
+	},
+	handleClick: function(e){
+		this.setState({tab: e.target.text});
+	},
 	render: function(){
 		return(
 			<div>
-				<Nav />
-				<Body />
+				<Nav handleClick={this.handleClick}/>
+				<Body tab={this.state.tab}/>
 			</div>
 		);
 	}
