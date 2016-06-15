@@ -7,3 +7,16 @@
 	background-color: transparent;
 	color: #337ab7;
 }
+
+.container .row h2 {
+	color: #337ab7;
+}
+
+.container .row p {
+	font-family: 'Hind', serif;
+	color: #337aa0;
+}
+
+.center-block {
+	float: none;
+}
