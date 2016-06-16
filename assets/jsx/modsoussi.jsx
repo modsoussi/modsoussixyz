@@ -4,6 +4,12 @@
  * (c) 2016. modsoussi.
  */
 
+'use strict';
+
+var React = require('react');
+var ReactDOM = require('react-dom');
+var ReactTransitionGroup = require('react-addons-transition-group');
+
 var Nav = React.createClass({
 	handleClick: function(e){
 		return this.props.handleClick(e);
@@ -68,7 +74,7 @@ var Body = React.createClass({
 	render: function(){
 		if(this.props.tab === "modsoussi"){
 			return(
-				<div className="container" style={{marginTop: 50, fontSize: 25}}>
+				<div className="container" style={{marginTop: 30, fontSize: 25}}>
 					<div className="row">
 						<div className="col-md-6 center-block">
 							<p>Hello there, friend! My name is Mohamed, and I go by Mo. I was born

@@ -1,0 +1,38 @@
+{
+  "name": "modsoussixyz",
+  "version": "0.5.0",
+  "description": "personal website",
+  "main": "modsoussi.jsx",
+  "scripts": {
+    "test": "echo \"Hi, Test!\"",
+    "start": "npm run server | npm run dev",
+    "server": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server --progress --colors --port 8090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modsoussi/modsoussixyz.git"
+  },
+  "keywords": [
+    "modsoussi"
+  ],
+  "author": "mohamed d. soussi",
+  "bugs": {
+    "url": "https://github.com/modsoussi/modsoussixyz/issues"
+  },
+  "homepage": "https://github.com/modsoussi/modsoussixyz#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-addons-transition-group": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}

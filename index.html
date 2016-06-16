@@ -9,11 +9,10 @@
 		<title>modsoussi</title>
 		
 		<!-- begin: scripts -->
-		<script src="assets/js/react.min.js"></script>
-		<script src="assets/js/react-dom.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+		<script type="text/javascript" src="./node_modules/react/dist/react.js"></script>
 		<!-- end: scripts -->
 		
 		<!-- begin: css stylesheets -->
@@ -27,6 +26,7 @@
 	<body>
 		<div id="main"></div> <!-- div where React will be rendered -->
 		
-		<script type="text/babel" src="assets/jsx/modsoussi.jsx"></script> <!-- include main, and only, jsx script -->
+		<script src="http://localhost:8090/webpack-dev-server.js"></script>
+		<script type="text/javascript" src="http://localhost:8090/public/bundle.js"></script>
 	</body>
 </html>
