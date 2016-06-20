@@ -4,6 +4,35 @@
 	to {opacity: 1;}
 }
 
+.jone-enter {
+	opacity: 0.1;
+}
+
+.jone-enter.jone-enter-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.jone-leave {
+	opacity: 1;
+}
+
+.jone-leave.jone-leave-active {
+	opacity: 0.1;
+	transition: opacity 300ms ease-out;
+}
+
+/* Responsiveness */
+
+nav.visible-xs >ul>li {
+	display: inline-block;
+	
+}
+
+nav.visible-xs >ul {
+	text-align: center;
+}
+
 /* Style stuff */
 
 .navbar-light .navbar-nav .active>a:hover {
@@ -25,6 +54,10 @@
 	animation-duration: 1s;
 }
 
+.container .row p {
+	font-size: 18pt;
+}
+
 .container .row p, a {
 	font-family: 'Hind', serif;
 	color: #337aa0;
@@ -37,4 +70,8 @@
 
 .center-block {
 	float: none;
+}
+
+.navbar>ul>li {
+	display: inline-block;
 }
