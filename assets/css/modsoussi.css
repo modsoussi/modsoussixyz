@@ -35,9 +35,20 @@ nav.visible-xs >ul {
 
 /* Style stuff */
 
-.navbar-light .navbar-nav .active>a:hover {
+.navbar-light .navbar-nav .active>a:hover, .navbar-header>a:hover {
 	background-color: transparent;
+	text-decoration: none;
 	border-bottom: solid 2px #e6e600;
+}
+
+.navbar-light .navbar-nav .active a, .navbar-header a {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.navbar .navbar-header .navbar-toggle .icon-bar {
+	color: #337ab7;
+	background-color: #337ab7;
 }
 
 .navbar-light .navbar-nav .inactive>a:hover {
@@ -72,6 +83,6 @@ nav.visible-xs >ul {
 	float: none;
 }
 
-.navbar>ul>li {
+.navbar-static-bottom ul>li {
 	display: inline-block;
 }

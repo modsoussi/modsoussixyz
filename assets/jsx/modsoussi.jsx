@@ -17,54 +17,61 @@ var Nav = React.createClass({
 	render: function(){
 		return(
 			<nav className="navbar navbar-light" style={{marginTop: 15, marginLeft: 25, marginRight: 25, fontSize: 20}}>
-				<ul className="nav navbar-nav">
-					<li className="nav-item active">
-						<a href="#" style={{fontSize: 36}} onClick={this.handleClick}>
-							modsoussi
-						</a>
-					</li>
-					<li className="nav-item active" onClick={this.handleClick}>
-						<a href="#" style={{marginLeft: 25, marginTop: 5}}>
-							skillz
-						</a>
-					</li>
-					<li className="nav-item active" onClick={this.handleClick}>
-						<a href="#" style={{marginTop: 5}}>
-							projects
-						</a>
-					</li>
-				</ul>
+				<div className="navbar-header">
+					<button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#coll">
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+						<span className="icon-bar"></span>
+					</button>
+					<a href="#" style={{fontSize: 36}} onClick={this.handleClick}>
+						modsoussi
+					</a>
+				</div>
+				<div className="collapse navbar-collapse" id="coll">
+					<ul className="nav navbar-nav">
+						<li className="nav-item active" onClick={this.handleClick}>
+							<a href="#" style={{marginLeft: 25, marginTop: 5}}>
+								skillz
+							</a>
+						</li>
+						<li className="nav-item active" onClick={this.handleClick}>
+							<a href="#" style={{marginLeft: 25, marginTop: 5}}>
+								projects
+							</a>
+						</li>
+					</ul>
 				
-				<ul className="nav navbar-nav navbar-right hidden-xs">
-					<li className="nav-item active">
-						<a target="_blank" href="https://twitter.com/modsoussi">
-							<g>
-								<i className="fa fa-twitter"></i>
-							</g>
-						</a>
-					</li>
-					<li className="nav-item active">
-						<a target="_blank" href="https://github.com/modsoussi">
-							<g>
-								<i className="fa fa-github"></i>
-							</g>
-						</a>
-					</li>
-					<li className="nav-item active">
-						<a target="_blank" href="https://linkedin.com/in/mohameddsoussi">
-							<g>
-								<i className="fa fa-linkedin"></i>
-							</g>
-						</a>
-					</li>
-					<li className="nav-item active">
-						<a href="#">
-							<g>
-								<i className="fa fa-envelope" style={{marginRight: 15}}></i>
-							</g>
-						</a>
-					</li>
-				</ul>
+					<ul className="nav navbar-nav navbar-right hidden-xs">
+						<li className="nav-item active">
+							<a target="_blank" href="https://twitter.com/modsoussi">
+								<g>
+									<i className="fa fa-twitter"></i>
+								</g>
+							</a>
+						</li>
+						<li className="nav-item active">
+							<a target="_blank" href="https://github.com/modsoussi">
+								<g>
+									<i className="fa fa-github"></i>
+								</g>
+							</a>
+						</li>
+						<li className="nav-item active">
+							<a target="_blank" href="https://linkedin.com/in/mohameddsoussi">
+								<g>
+									<i className="fa fa-linkedin"></i>
+								</g>
+							</a>
+						</li>
+						<li className="nav-item active">
+							<a href="#">
+								<g>
+									<i className="fa fa-envelope" style={{marginRight: 15}}></i>
+								</g>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		);
 	}
