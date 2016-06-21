@@ -81,23 +81,38 @@ var Content = React.createClass({
 	render: function(){
 		if(this.props.tab === "modsoussi"){
 			return(
-				<p>Hello there, friend! My name is Mohamed, and I go by Mo. I was born
-				and raised in Bizerte, Tunisia, before life led me to a wonderful piece of
-				land in western Massachussetts that people call the Purple Bubble, and there stood
-				the top liberal arts college in the country, Williams College. In this bubble in the
-				middle of the Berkshires, I majored in Physics and Computer Science and set out to change
-				the world. My belief is that Humanity's future lies in its expansion outside of planet Earth.
-				I'm only 24, and I'm going to do everything I can to see it happen in my lifetime. @elonmusk ;)
-				For the time being I'm with <a href="http://daycationapp.com" target="_blank">
-				Daycation</a>, all while I work on my aerospace engineering skills.
-				</p>
+				<div className="row">
+					<div className="col-md-6 center-block">
+						<p>Hello there, friend! My name is Mohamed, and I go by Mo. I was born
+						and raised in Bizerte, Tunisia, before life led me to a wonderful piece of
+						land in western Massachussetts that people call the Purple Bubble, and there stood
+						the top liberal arts college in the country, Williams College. In this bubble in the
+						middle of the Berkshires, I majored in Physics and Computer Science and set out to change
+						the world. My belief is that Humanity's future lies in its expansion outside of planet Earth.
+						I'm only 24, and I'm going to do everything I can to see it happen in my lifetime. @elonmusk ;)
+						For the time being I'm with <a href="http://daycationapp.com" target="_blank">
+						Daycation</a>, all while I work on my aerospace engineering skills.
+						</p>
+					</div>
+				</div>
 			);
 		} else if(this.props.tab === "skillz"){
 			return(
-				<h2> Hello, skillz! </h2>
+				<div className="row">
+					<div className="col-md-6 center-block">
+						<p> Can write code in Java, Scala, C/C++, Go, Swift, Bash, Shell, X-86 assembly, and JavaScript.
+						Can also develop for iOS, Android, and Web. Web development mainly using a combo of ReactJS,
+						HTML5, and CSS3, all on top of NodeJS.
+						</p>
+					</div>
+				</div>
 			);
 		} else return(
-			<h2> Hello, projects! </h2>
+			<div className="row">
+				<div className="col-md-6 center-block">
+					<h2> Hello, projects! </h2>
+				</div>
+			</div>
 		);
 	}
 });
@@ -107,11 +122,7 @@ var Body = React.createClass({
 		return(
 			<ReactCSSTransitionGroup transitionName="jone" transitionEnterTimeout={500} transitionLeaveTimeout={0.01}>
 				<div  key={this.props.tab} className="container">
-					<div className="row">
-						<div className="col-md-6 center-block">
-							<Content tab={this.props.tab}/>
-						</div>
-					</div>
+					<Content tab={this.props.tab}/>
 				</div>
 			</ReactCSSTransitionGroup>
 		)
