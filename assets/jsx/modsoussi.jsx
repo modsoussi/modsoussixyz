@@ -35,7 +35,7 @@ var Nav = React.createClass({
 							</a>
 						</li>
 						<li className="nav-item active" onClick={this.handleClick}>
-							<a href="#" style={{marginLeft: 25, marginTop: 5}}>
+							<a href="#" id="projects" style={{marginTop: 5}}>
 								projects
 							</a>
 						</li>

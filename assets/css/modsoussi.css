@@ -33,6 +33,12 @@ nav.visible-xs >ul {
 	text-align: center;
 }
 
+@media (max-width: 768px){
+	#projects {
+		margin-left: 25px;
+	}
+}
+
 /* Style stuff */
 
 .navbar-light .navbar-nav .active>a:hover, .navbar-header>a:hover {
