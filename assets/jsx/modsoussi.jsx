@@ -102,7 +102,12 @@ var Content = React.createClass({
 					<div className="col-md-6 center-block">
 						<p> Can write code in Java, Scala, C/C++, Go, Swift, Bash, Shell, X-86 assembly, and JavaScript.
 						Can also develop for iOS, Android, and Web. Web development mainly using a combo of ReactJS,
-						HTML5, and CSS3, all on top of NodeJS.
+						HTML5, and CSS3, all on top of NodeJS. Last but not least, proficient in Mathematica.<br/><br/>
+						Now beyond what languages I can code in, and to what I believe to be my strengths, this is what
+						sets me apart from everybody else. As a physics and CS major, I had to learn new material quickly,
+						otherwise I fell behind, and that was never a good thing. I am intensely ambitious, my dreams are big,
+						and my goals even bigger. Couple ambition and perseverence, and you get a beast who will stop at
+						nothing to get things done, and to keep moving forward. 
 						</p>
 					</div>
 				</div>
