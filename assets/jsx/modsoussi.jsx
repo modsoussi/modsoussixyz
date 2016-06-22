@@ -23,7 +23,7 @@ var Nav = React.createClass({
 						<span className="icon-bar"></span>
 						<span className="icon-bar"></span>
 					</button>
-					<a href="#" style={{fontSize: 36}} onClick={this.handleClick}>
+					<a href="/" style={{fontSize: 36}} onClick={this.handleClick}>
 						modsoussi
 					</a>
 				</div>
@@ -102,20 +102,60 @@ var Content = React.createClass({
 					<div className="col-md-6 center-block">
 						<p> Can write code in Java, Scala, C/C++, Go, Swift, Bash, Shell, X-86 assembly, and JavaScript.
 						Can also develop for iOS, Android, and Web. Web development mainly using a combo of ReactJS,
-						HTML5, and CSS3, all on top of NodeJS. Last but not least, proficient in Mathematica.<br/><br/>
+						HTML5, and CSS3, all on top of NodeJS. Last but not least, proficient with Mathematica.<br/><br/>
 						Now beyond what languages I can code in, and to what I believe to be my strengths, this is what
 						sets me apart from everybody else. As a physics and CS major, I had to learn new material quickly,
 						otherwise I fell behind, and that was never a good thing. I am intensely ambitious, my dreams are big,
 						and my goals even bigger. Couple ambition and perseverence, and you get a beast who will stop at
-						nothing to get things done, and to keep moving forward. 
+						nothing to get things done, and to keep moving forward. I am that beast.
 						</p>
 					</div>
 				</div>
 			);
 		} else return(
 			<div className="row">
-				<div className="col-md-6 center-block">
-					<h2> Hello, projects! </h2>
+				<div className="col-md-10 center-block">
+					<div className="col-md-4">
+						<div className="hovereffect">
+							<img className="img-responsive" src="assets/imgs/mdserver.png" alt="mdserver"/>
+							<div className="overlay">
+								<h2> mdserver: C </h2>
+								<p>
+									<a href="https://github.com/modsoussi/mdserver" target="_blank">
+										Show Code
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="col-md-4">
+						<div className="hovereffect">
+							<img className="img-responsive" src="assets/imgs/rsgen.png" alt="mdserver"/>
+							<div className="overlay">
+								<h2> Random Sentence Generator: Scala </h2>
+								<p>
+									<a href="https://github.com/modsoussi/mdserver" target="_blank">
+										Show Code
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div className="col-md-4">
+						<div className="hovereffect">
+							<img className="img-responsive" src="assets/imgs/rsgen.png" alt="mdserver"/>
+							<div className="overlay">
+								<h2> Random Sentence Generator: Scala </h2>
+								<p>
+									<a href="https://github.com/modsoussi/mdserver" target="_blank">
+										Show Code
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		);
