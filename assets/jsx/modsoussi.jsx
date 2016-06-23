@@ -113,48 +113,56 @@ var Content = React.createClass({
 				</div>
 			);
 		} else return(
-			<div className="row">
-				<div className="col-md-10 center-block">
-					<div className="col-md-4">
-						<div className="hovereffect">
-							<img className="img-responsive" src="assets/imgs/mdserver.png" alt="mdserver"/>
-							<div className="overlay">
-								<h2> mdserver: C </h2>
-								<p>
-									<a href="https://github.com/modsoussi/mdserver" target="_blank">
-										Show Code
-									</a>
-								</p>
+			<div>
+				<div className="row">
+					<div className="col-md-10 center-block">
+						<div className="col-md-4">
+							<div className="hovereffect">
+								<img className="img-responsive" src="assets/imgs/mdserver.png" alt="mdserver"/>
+								<div className="overlay">
+									<h2>mdserver</h2>
+									<p>
+										<a href="https://github.com/modsoussi/mdserver" target="_blank">
+											Show Code
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div className="col-md-4">
+							<div className="hovereffect">
+								<img className="img-responsive" src="assets/imgs/rsgen.png" alt="rsgen" style={{height:166}}/>
+								<div className="overlay">
+									<h4>Random Sentence Generator</h4>
+									<p>
+										<a href="https://github.com/modsoussi/random-sentence-generator" target="_blank">
+											Show Code
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div className="col-md-4">
+							<div className="hovereffect">
+								<img className="img-responsive" src="assets/imgs/modsoussixyz.png" alt="modsoussixyz" style={{height:166}}/>
+								<div className="overlay">
+									<h2>modsoussi.xyz</h2>
+									<p>
+										<a href="https://github.com/modsoussi/modsoussixyz" target="_blank">
+											Show Code
+										</a>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<div className="col-md-4">
-						<div className="hovereffect">
-							<img className="img-responsive" src="assets/imgs/rsgen.png" alt="mdserver"/>
-							<div className="overlay">
-								<h2> Random Sentence Generator: Scala </h2>
-								<p>
-									<a href="https://github.com/modsoussi/mdserver" target="_blank">
-										Show Code
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div className="col-md-4">
-						<div className="hovereffect">
-							<img className="img-responsive" src="assets/imgs/rsgen.png" alt="mdserver"/>
-							<div className="overlay">
-								<h2> Random Sentence Generator: Scala </h2>
-								<p>
-									<a href="https://github.com/modsoussi/mdserver" target="_blank">
-										Show Code
-									</a>
-								</p>
-							</div>
-						</div>
+				<div className="row" style={{marginTop: 50}}>
+					<div className="col-md-8 center-block" style={{textAlign: "center"}}>
+						<p> More incoming! In the meantime, check out my <a href="https://drive.google.com/file/d/0B9c4yJvrOb4FRkVibjFpQ2R3bDQ/view?usp=sharing" target="_blank">resume</a> :)</p>
 					</div>
 				</div>
 			</div>
