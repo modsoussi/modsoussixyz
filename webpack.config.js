@@ -1,7 +1,10 @@
 var path = require('path');
 
 module.exports = {
-	entry: './assets/jsx/modsoussi.jsx',
+	entry: [
+		'webpack-dev-server/client?http://modsoussi.xyz:8080/',
+		'./assets/jsx/modsoussi.jsx'
+	],
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js',
