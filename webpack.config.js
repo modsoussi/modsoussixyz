@@ -8,7 +8,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js',
-		publicPath: 'http://modsoussi.xyz:8080/public',
+		publicPath: 'http://modsoussi.xyz:8080/public/',
 		
 	},
 	module: {
