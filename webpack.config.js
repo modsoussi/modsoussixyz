@@ -1,6 +1,9 @@
+var path = require('path');
+
 module.exports = {
 	entry: './assets/jsx/modsoussi.jsx',
 	output: {
+		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js',
 		publicPath: 'http://localhost:8080/public',
 		
