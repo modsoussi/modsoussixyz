@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Hi, Test!\"",
     "start": "npm run server | npm run dev",
-    "server": "./node_modules/.bin/http-server -p 8080",
-    "dev": "webpack-dev-server --progress --colors --port 8090"
+    "server": "./node_modules/.bin/http-server -p 80",
+    "dev": "webpack-dev-server --progress --colors --port 8080"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "babel-preset-react": "^6.5.0",
     "http-server": "^0.9.0",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "~1.14.1"
   },
   "dependencies": {
     "react": "^15.1.0",

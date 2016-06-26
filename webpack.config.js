@@ -2,7 +2,8 @@ module.exports = {
 	entry: './assets/jsx/modsoussi.jsx',
 	output: {
 		filename: 'bundle.js',
-		publicPath: 'http://localhost:8090/public'
+		publicPath: 'http://localhost:8080/public',
+		
 	},
 	module: {
 		loaders: [ /** It's very important that the loaders field is an array */
