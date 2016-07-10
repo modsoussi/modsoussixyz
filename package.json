@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Hi, Test!\"",
     "start": "npm run server | npm run dev",
-    "server": "./node_modules/.bin/http-server -p 80",
-    "dev": "webpack-dev-server --progress --colors --port 8080"
+    "server": "./node_modules/.bin/http-server -p 80 &",
+    "dev": "webpack-dev-server --progress --colors --port 3000 &"
   },
   "repository": {
     "type": "git",
