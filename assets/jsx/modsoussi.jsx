@@ -99,7 +99,7 @@ var Content = React.createClass({
 		} else if(this.props.tab === "skillz"){
 			return(
 				<div className="row">
-					<div className="col-md-6 center-block">
+					<div className="col-md-8 center-block">
 						<p> Can write code in Java, Scala, C/C++, Go, Swift, Bash, Shell, X-86 assembly, and JavaScript.
 						Can also develop for iOS, Android, and Web. Web development mainly using a combo of ReactJS,
 						HTML5, and CSS3, all on top of NodeJS. Last but not least, proficient with Mathematica.<br/><br/>
